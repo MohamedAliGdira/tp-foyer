@@ -21,6 +21,6 @@ public class Bloc {
     @JoinColumn(name = "foyer_id")
     private Foyer foyer;
 
-    @OneToMany(mappedBy = "bloc", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "chambres", cascade = CascadeType.ALL)
     private java.util.List<Chambre> chambres;
 }

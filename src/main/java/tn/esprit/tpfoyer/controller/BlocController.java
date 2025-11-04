@@ -13,12 +13,12 @@ public class BlocController {
     @Autowired
     private BlocService blocService;
 
-    @PostMapping
+    @PostMapping("/ajout")
     public Bloc addBloc(@RequestBody Bloc b) {
         return blocService.addBloc(b);
     }
 
-    @GetMapping
+    @GetMapping("/get")
     public List<Bloc> getAllBlocs() {
         return blocService.getAllBlocs();
     }
