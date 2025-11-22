@@ -9,6 +9,7 @@ public interface BlocService {
     void deleteBloc(Long id);
     Bloc getBloc(Long id);
     List<Bloc> getAllBlocs();
+    Bloc affecterChambreABLoc(List<Long> numChambre,Long idBloc);
 }
 
 
